@@ -2,13 +2,15 @@ import { blog } from "@/Data/data";
 import Link from "next/link";
 import React from "react";
 
-type PageProps = {
-  params: { id: number };
-};
+// type PageProps = {
+//   params: { id: number };
+// };
 
-async function Page({ params }: PageProps) {
+function Page() {
+  // async function Page({ params }: PageProps) {
   // const blogId = Number(params?.id);
-  const blogId = parseInt(params?.id.toString());
+  // const blogId = parseInt(params?.id.toString());
+  const blogId = 1;
 
   const currentPost = blog.find((data) => data?.id === blogId);
 
