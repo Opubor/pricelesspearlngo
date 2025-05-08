@@ -3,6 +3,8 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --color-wine: #800000;
+  --color-lightWine: #a75555;
 }
 
 @theme inline {
@@ -16,6 +18,21 @@
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
+  }
+}
+
+@layer utilities {
+  .bg-wine {
+    background-color: var(--color-wine);
+  }
+  .text-wine {
+    color: var(--color-wine);
+  }
+  .border-wine {
+    border-color: var(--color-wine);
+  }
+  .bg-lightWine {
+    background-color: var(--color-lightWine);
   }
 }
 
