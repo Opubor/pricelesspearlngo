@@ -77,7 +77,7 @@ function Events() {
                 onClick={() => {
                   setOpenModal(false), setEventId(0);
                 }}
-                className="flex justify-center items-center gap-2 p-2 text-xl text-white font-extrabold cursor-pointer bg-gray-300/60"
+                className="flex justify-center items-center gap-2 p-2 text-xl text-white font-extrabold cursor-pointer bg-gray-900/80"
               >
                 <MdClose size={20} className=" hover:animate-spin" />
               </div>

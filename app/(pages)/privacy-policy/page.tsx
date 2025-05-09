@@ -1,4 +1,5 @@
 import { contactInformation } from "@/Data/data";
+import Link from "next/link";
 import React from "react";
 import { IoCallOutline } from "react-icons/io5";
 import { MdOutlineMailOutline } from "react-icons/md";
@@ -96,18 +97,30 @@ function Page() {
             If you have any concerns about privacy on this site, please contact
             us at:
           </p>
-          <p className="flex justify-start items-center gap-1 text-xs lg:text-base pt-4">
+          <Link
+            href={`mailto:${contactInformation?.at(0)?.email!}`}
+            target="blank"
+            className="flex justify-start items-center gap-1 text-xs lg:text-base pt-4"
+          >
             <MdOutlineMailOutline />
             {contactInformation?.at(0)?.email}
-          </p>
-          <p className="flex justify-start items-center gap-1 text-xs lg:text-base pt-4">
+          </Link>
+          <Link
+            href={`tel:${contactInformation?.at(0)?.phone1!}`}
+            target="blank"
+            className="flex justify-start items-center gap-1 text-xs lg:text-base pt-4"
+          >
             <IoCallOutline />
             {contactInformation?.at(0)?.phone1}
-          </p>
-          <p className="flex justify-start items-center gap-1 text-xs lg:text-base pt-4">
+          </Link>
+          <Link
+            href={`tel:${contactInformation?.at(0)?.phone2!}`}
+            target="blank"
+            className="flex justify-start items-center gap-1 text-xs lg:text-base pt-4"
+          >
             <IoCallOutline />
             {contactInformation?.at(0)?.phone2}
-          </p>
+          </Link>
         </div>
       </div>
     </div>
