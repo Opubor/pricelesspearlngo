@@ -12,12 +12,12 @@ function AboutUs() {
         Founded to empower communities through education and sustainability.
       </p>
 
-      <div className="flex flex-col lg:flex-row justify-center items-center gap-4 pt-4">
-        <div
-          data-aos="fade-right"
-          className="w-full lg:w-6/12 h-72 bg-[url('/pic8.jpg')] bg-cover bg-center"
-        ></div>
-        <div data-aos="fade-left" className="w-full lg:w-6/12">
+      <div
+        className="flex flex-col lg:flex-row justify-center items-center gap-4 pt-4"
+        data-aos="fade-up"
+      >
+        <div className="w-full lg:w-6/12 h-72 bg-[url('/pic8.jpg')] bg-cover bg-center"></div>
+        <div className="w-full lg:w-6/12">
           <p className="text-sm pb-4 text-justify">
             Priceless Pearl Foundation, founded in [Year], is dedicated to
             transforming communities through education, empowerment, and

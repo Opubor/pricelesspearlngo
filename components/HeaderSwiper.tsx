@@ -18,7 +18,7 @@ function HeaderSwiper() {
     <div>
       <Swiper navigation={true} modules={[Navigation]} className="mySwiper">
         <SwiperSlide>
-          <div className="bg-[url('/pic10.jpg')] bg-cover h-screen w-full flex flex-col justify-start items-start px-2 lg:px-12 xl:px-36 pt-48 lg:pt-64">
+          <div className="bg-[url('/pic10.jpg')] bg-cover lg:h-screen w-full flex flex-col justify-start items-start px-2 lg:px-12 xl:px-36 pt-48 lg:pt-64 pb-8 lg:pb-0">
             <h1
               data-aos="fade-right"
               className="tracking-tighter bg-wine text-xl lg:text-4xl text-white font-extrabold py-4 px-4 uppercase"
@@ -62,7 +62,7 @@ function HeaderSwiper() {
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <div className="bg-[url('/pic4.jpg')] bg-cover h-screen w-full flex flex-col justify-start items-start px-2 lg:px-12 xl:px-36 pt-48 lg:pt-64">
+          <div className="bg-[url('/pic4.jpg')] bg-cover lg:h-screen w-full flex flex-col justify-start items-start px-2 lg:px-12 xl:px-36 pt-48 lg:pt-64 pb-8 lg:pb-0">
             <h1
               data-aos="fade-right"
               className="tracking-tighter bg-wine text-xl lg:text-4xl text-white font-extrabold py-4 px-4 uppercase"
@@ -106,7 +106,7 @@ function HeaderSwiper() {
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <div className="bg-[url('/pic2.jpg')] bg-cover h-screen w-full flex flex-col justify-start items-start px-2 lg:px-12 xl:px-36 pt-48 lg:pt-64">
+          <div className="bg-[url('/pic2.jpg')] bg-cover lg:h-screen w-full flex flex-col justify-start items-start px-2 lg:px-12 xl:px-36 pt-48 lg:pt-64 pb-8 lg:pb-0">
             <h1
               data-aos="fade-right"
               className="tracking-tighter bg-wine text-xl lg:text-4xl text-white font-extrabold py-4 px-4 uppercase"

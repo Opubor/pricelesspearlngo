@@ -128,14 +128,46 @@ const events = [
 ];
 
 const gallery = [
-  { id: 1, picture: "bg-[url('/pic4.jpg')]" },
-  { id: 2, picture: "bg-[url('/pic3.jpg')]" },
-  { id: 3, picture: "bg-[url('/pic4.jpg')]" },
-  { id: 4, picture: "bg-[url('/pic1.jpg')]" },
-  { id: 5, picture: "bg-[url('/pic9.jpg')]" },
-  { id: 6, picture: "bg-[url('/pic8.jpg')]" },
-  { id: 7, picture: "bg-[url('/pic7.jpg')]" },
-  { id: 8, picture: "bg-[url('/pic6.jpg')]" },
+  {
+    id: 1,
+    picture: "bg-[url('/pic4.jpg')]",
+    caption: "Youth empowerment program at Gboko Benue state.",
+  },
+  {
+    id: 2,
+    picture: "bg-[url('/pic3.jpg')]",
+    caption: "Youth empowerment program at Gboko Benue state.",
+  },
+  {
+    id: 3,
+    picture: "bg-[url('/pic4.jpg')]",
+    caption: "Youth empowerment program at Gboko Benue state.",
+  },
+  {
+    id: 4,
+    picture: "bg-[url('/pic1.jpg')]",
+    caption: "Youth empowerment program at Gboko Benue state.",
+  },
+  {
+    id: 5,
+    picture: "bg-[url('/pic9.jpg')]",
+    caption: "Youth empowerment program at Gboko Benue state.",
+  },
+  {
+    id: 6,
+    picture: "bg-[url('/pic8.jpg')]",
+    caption: "Youth empowerment program at Gboko Benue state.",
+  },
+  {
+    id: 7,
+    picture: "bg-[url('/pic7.jpg')]",
+    caption: "Youth empowerment program at Gboko Benue state.",
+  },
+  {
+    id: 8,
+    picture: "bg-[url('/pic6.jpg')]",
+    caption: "Youth empowerment program at Gboko Benue state.",
+  },
 ];
 
 const team = [

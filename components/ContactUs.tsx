@@ -38,18 +38,30 @@ function ContactUs() {
               </h1>
             </div>
           </div>
-          <p className="flex justify-start items-center gap-1 text-xs lg:text-base pt-4">
+          <Link
+            href={`mailto:${contactInformation?.at(0)?.email!}`}
+            target="blank"
+            className="flex justify-start items-center gap-1 text-xs lg:text-base pt-4"
+          >
             <MdOutlineMailOutline />
             {contactInformation?.at(0)?.email}
-          </p>
-          <p className="flex justify-start items-center gap-1 text-xs lg:text-base pt-4">
+          </Link>
+          <Link
+            href={`tel:${contactInformation?.at(0)?.phone1!}`}
+            target="blank"
+            className="flex justify-start items-center gap-1 text-xs lg:text-base pt-4"
+          >
             <IoCallOutline />
             {contactInformation?.at(0)?.phone1}
-          </p>
-          <p className="flex justify-start items-center gap-1 text-xs lg:text-base pt-4">
+          </Link>
+          <Link
+            href={`tel:${contactInformation?.at(0)?.phone2!}`}
+            target="blank"
+            className="flex justify-start items-center gap-1 text-xs lg:text-base pt-4"
+          >
             <IoCallOutline />
             {contactInformation?.at(0)?.phone2}
-          </p>
+          </Link>
           <p className="flex justify-start items-center gap-1 text-xs lg:text-base pt-4">
             <IoLocationOutline />
             {contactInformation?.at(0)?.address}

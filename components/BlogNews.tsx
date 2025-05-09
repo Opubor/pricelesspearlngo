@@ -15,14 +15,17 @@ function BlogNews() {
         Stories, updates, and insights from our journey.
       </p>
 
-      <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 lg:gap-4">
+      <div
+        className="grid grid-cols-1 lg:grid-cols-3 gap-12 lg:gap-4"
+        data-aos="fade-up"
+      >
         {blog?.map((data) => (
-          <div data-aos="fade-up" key={data?.id}>
+          <div key={data?.id}>
             <div
               className={`${data?.picture} h-72 w-full bg-cover bg-center`}
             ></div>
             <div className="flex justify-start items-start gap-3 mt-4">
-              <div>
+              <div className="w-2/12 bg-red-300">
                 <h1 className="w-16 h-20 bg-wine text-white text-md flex justify-center items-center font-medium text-center">
                   {data?.day} <br></br> {data?.month}
                 </h1>
@@ -30,11 +33,12 @@ function BlogNews() {
                   {data?.year}
                 </h1>
               </div>
-              <div>
+
+              <div className="w-10/12 pr-3">
                 <h1 className="font-bold text-sm lg:text-md uppercase">
                   {data?.title}
                 </h1>
-                <p className="text-sm text-gray-700 pt-2 pb-4 w-72 truncate">
+                <p className="text-sm text-gray-700 pt-2 pb-4 truncate">
                   {data?.paragraph1}
                 </p>
                 <Link

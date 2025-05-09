@@ -35,21 +35,37 @@ function Footer() {
           </Link>
 
           <div className="text-white mt-8">
-            <p className="flex justify-start items-center gap-1 text-xs lg:text-base pt-4">
+            <Link
+              href={`mailto:${contactInformation?.at(0)?.email!}`}
+              target="blank"
+              className="flex justify-start items-center gap-1 text-xs lg:text-base pt-4"
+            >
               <MdOutlineMailOutline />
-              pricelesspearlfoundation@gmail.com
-            </p>
-            <p className="flex justify-start items-center gap-1 text-xs lg:text-base pt-4">
+              {contactInformation?.at(0)?.email}
+            </Link>
+            <Link
+              href={`tel:${contactInformation?.at(0)?.phone1!}`}
+              target="blank"
+              className="flex justify-start items-center gap-1 text-xs lg:text-base pt-4"
+            >
               <IoCallOutline />
-              +234 9139124809
-            </p>
+              {contactInformation?.at(0)?.phone1}
+            </Link>
+            <Link
+              href={`tel:${contactInformation?.at(0)?.phone2!}`}
+              target="blank"
+              className="flex justify-start items-center gap-1 text-xs lg:text-base pt-4"
+            >
+              <IoCallOutline />
+              {contactInformation?.at(0)?.phone2}
+            </Link>
             <p className="flex justify-start items-center gap-1 text-xs lg:text-base pt-4">
               <IoLocationOutline />
-              No. 9 Abraham Adesanya estate, Lekki, Lagos, Nigeria
+              {contactInformation?.at(0)?.address}
             </p>
             <p className="flex justify-start items-center gap-1 text-xs lg:text-base pt-4">
               <CiClock2 />
-              MON - FRI, 9am - 5pm
+              {contactInformation?.at(0)?.openingHours}
             </p>
           </div>
         </div>
@@ -96,6 +112,18 @@ function Footer() {
             className="text-xs lg:text-sm mt-4 hover:underline"
           >
             Contact Us
+          </Link>
+          <Link
+            href={"/privacy-policy"}
+            className="text-xs lg:text-sm mt-4 hover:underline"
+          >
+            Privacy Policy
+          </Link>
+          <Link
+            href={"/gdpr-policy"}
+            className="text-xs lg:text-sm mt-4 hover:underline"
+          >
+            GDPR Policy
           </Link>
         </div>
         <div className="text-white flex flex-col justify-start items-center">

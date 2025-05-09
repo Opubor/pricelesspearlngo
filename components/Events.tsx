@@ -22,13 +22,15 @@ function Events() {
       <p className="text-gray-500 text-xs pt-2 pb-4">
         Highlights of our impactful community events and initiatives.
       </p>
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-4">
+      <div
+        className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-4"
+        data-aos="fade-up"
+      >
         {events.map((data) => (
           <div
             onClick={() => {
               setOpenModal(true), setEventId(data?.id);
             }}
-            data-aos="fade-up"
             key={data?.id}
             className="flex flex-col lg:flex-row justify-start items-start lg:items-center gap-2 h-auto lg:h-40 cursor-pointer hover:bg-gray-100"
           >

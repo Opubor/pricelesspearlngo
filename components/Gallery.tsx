@@ -24,7 +24,10 @@ function Gallery() {
           initiatives.
         </p>
       </div>
-      <div className="grid grid-cols-2 lg:grid-cols-4 gap-1 p-1">
+      <div
+        className="grid grid-cols-2 lg:grid-cols-4 gap-1 p-1"
+        data-aos="fade-up"
+      >
         {gallery.map((data) => (
           <div
             key={data?.id}
@@ -35,7 +38,6 @@ function Gallery() {
                 setOpenModal(true), setGalleryId(data?.id);
               }}
               key={data?.id}
-              data-aos="fade-up"
               className={`${data?.picture} bg-center bg-cover w-full h-44 lg:h-72 hover:scale-110 overflow-hidden cursor-pointer`}
             ></div>
           </div>
@@ -63,6 +65,11 @@ function Gallery() {
               <MdClose size={20} className=" hover:animate-spin" />
             </div>
           </div>
+          {clickedPicture?.caption && (
+            <p className="text-sm text-center text-gray-600 bg-white py-2 w-full">
+              {clickedPicture?.caption}
+            </p>
+          )}
         </div>
       </div>
     </div>

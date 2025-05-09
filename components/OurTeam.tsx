@@ -13,9 +13,12 @@ function OurTeam() {
         Meet the passionate minds driving our mission forward.
       </p>
 
-      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
+      <div
+        className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4"
+        data-aos="fade-up"
+      >
         {team?.map((data) => (
-          <div data-aos="fade-up" key={data?.id}>
+          <div key={data?.id}>
             <div
               className={`${data?.picture} bg-cover bg-center w-full h-44 lg:h-72`}
             ></div>

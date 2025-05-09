@@ -13,8 +13,11 @@ function Mission() {
         Changing lives through learning, skills, and hope.
       </p>
 
-      <div className="flex flex-col lg:flex-row justify-center items-center gap-4 pt-4">
-        <div data-aos="fade-right" className="w-full lg:w-6/12">
+      <div
+        className="flex flex-col lg:flex-row justify-center items-center gap-4 pt-4"
+        data-aos="fade-up"
+      >
+        <div className="w-full lg:w-6/12">
           <p className="text-sm pb-4 text-justify">
             At Priceless Pearl Foundation, we are committed to transforming
             communities by providing children in rural areas with quality
@@ -35,10 +38,7 @@ function Mission() {
             resources and creating jobs.
           </p>
         </div>
-        <div
-          data-aos="fade-left"
-          className="w-full lg:w-6/12 h-72 bg-[url('/pic5.jpg')] bg-cover bg-center"
-        ></div>
+        <div className="w-full lg:w-6/12 h-72 bg-[url('/pic5.jpg')] bg-cover bg-center"></div>
       </div>
     </div>
   );

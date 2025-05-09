@@ -4,7 +4,7 @@ import React from "react";
 
 function layout({ children }: { children: React.ReactNode }) {
   return (
-    <div>
+    <div className="overflow-hidden">
       <Navbar />{" "}
       <div className="pt-44">
         {children}
